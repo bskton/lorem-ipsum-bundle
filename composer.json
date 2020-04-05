@@ -1,0 +1,28 @@
+{
+    "name": "bskton/lorem-ipsum-bundle",
+    "description": "Happy lorem ipsum bundle.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ilya Levin",
+            "email": "bskton@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4.4"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "KnpU\\LoremIpsumBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KnpU\\LoremIpsumBundle\\Tests\\": "tests/"
+        }
+    }
+}
