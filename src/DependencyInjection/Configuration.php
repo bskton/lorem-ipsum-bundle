@@ -20,8 +20,6 @@ class Configuration implements ConfigurationInterface
                 ->info('Whether or not you believe in unicorns')->end()
                 ->integerNode('min_sunshine')->defaultValue(3)
                 ->info('How much do you like sunshine?')->end()
-                ->scalarNode('word_provider')->defaultNull()
-                ->info('A word provider for text generation')->end()
             ->end();
 
         return $treeBuilder;

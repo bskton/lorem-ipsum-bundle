@@ -5,7 +5,6 @@ namespace KnpU\LoremIpsumBundle\Tests\Controller;
 
 
 use KnpU\LoremIpsumBundle\KnpULoremIpsumBundle;
-use KnpU\LoremIpsumBundle\Tests\StubWordList;
 use PHPUnit\Framework\TestCase;
 use Symfony\Bundle\FrameworkBundle\Client;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
@@ -59,6 +58,6 @@ class KnpULoremIpsumControllerKernel extends Kernel
 
     public function getCacheDir()
     {
-        return __DIR__.'/../var/cache/test/'.spl_object_hash($this);
+        return __DIR__.'/../../var/cache/test/'.spl_object_hash($this);
     }
 }

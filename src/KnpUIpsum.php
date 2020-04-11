@@ -20,7 +20,7 @@ class KnpUIpsum
 
     private $wordList;
 
-    public function __construct(array $wordProviders, bool $unicornsAreReal = true, $minSunshine = 3)
+    public function __construct(iterable $wordProviders, bool $unicornsAreReal = true, $minSunshine = 3)
     {
         $this->wordProviders = $wordProviders;
         $this->unicornsAreReal = $unicornsAreReal;
