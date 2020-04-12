@@ -8,7 +8,10 @@ use Symfony\Component\EventDispatcher\Event;
 
 class FilterApiResponseEvent extends Event
 {
-    private array $data;
+    /**
+     * @var array
+     */
+    private $data;
 
     public function __construct(array $data)
     {

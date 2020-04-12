@@ -12,9 +12,15 @@ use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class IpsumApiController extends AbstractController
 {
-    private KnpUIpsum $knpUIpsum;
+    /**
+     * @var KnpUIpsum
+     */
+    private $knpUIpsum;
 
-    private EventDispatcherInterface $eventDispatcher;
+    /**
+     * @var EventDispatcherInterface|null
+     */
+    private $eventDispatcher;
 
     public function __construct(KnpUIpsum $knpUIpsum, ?EventDispatcherInterface $eventDispatcher)
     {
